@@ -62,3 +62,122 @@ button {
 [hidden] {
   display: none !important;
 }
+
+/*componentes*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 7rem 2.5rem;
+}
+
+.section-alt {
+  background: var(--bg-alt);
+}
+
+.label {
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+/*cores de destaque*/
+.accent-orange {
+  --accent: var(--orange);
+  --accent-soft: rgba(255, 214, 160, 0.25);
+  --accent-bg: rgba(255, 214, 160, 0.08);
+}
+
+.accent-pink {
+  --accent: var(--pink);
+  --accent-soft: rgba(244, 167, 187, 0.25);
+  --accent-bg: rgba(244, 167, 187, 0.08);
+}
+
+.accent-lavender {
+  --accent: var(--lavender);
+  --accent-soft: rgba(196, 168, 219, 0.25);
+  --accent-bg: rgba(196, 168, 219, 0.08);
+}
+
+.accent-green {
+  --accent: var(--green);
+  --accent-soft: rgba(168, 197, 181, 0.25);
+  --accent-bg: rgba(168, 197, 181, 0.08);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  padding: 0.2rem 0.55rem;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border-radius: 4px;
+}
+
+.bullet-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.88rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: #a797b7;
+}
+
+.bullet-list li::before {
+  content: "◆";
+  position: absolute;
+  top: 0.1rem;
+  left: 0;
+  font-size: 0.45rem;
+  color: var(--pink);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border: 1px solid rgba(255, 214, 160, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 214, 160, 0.1);
+  color: var(--orange);
+  font-size: 0.85rem;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: rgba(255, 214, 160, 0.18);
+  transform: translateY(-2px);
+}
+
+.btn-accent {
+  border-color: rgba(244, 167, 187, 0.3);
+  background: rgba(244, 167, 187, 0.12);
+  color: var(--pink);
+}
+
+.btn-accent:hover {
+  background: rgba(244, 167, 187, 0.2);
+}
