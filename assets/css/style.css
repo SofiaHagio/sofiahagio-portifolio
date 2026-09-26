@@ -710,3 +710,118 @@ button {
   opacity: 1;
   transform: none;
 }
+
+/*responsivo*/
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 7rem 2rem 5rem;
+    text-align: center;
+  }
+
+  .hero-photo {
+    order: -1;
+    width: 180px;
+  }
+
+  .hero-description {
+    margin: 2rem auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .skill {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-nav {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .skill-tab {
+    flex-shrink: 0;
+    padding-right: 1.2rem;
+  }
+
+  .skill-tab::after,
+  .tab-desc {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1.5rem;
+  }
+
+  .nav-links {
+    gap: 1.25rem;
+    overflow-x: auto;
+  }
+
+  .nav-links a {
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  .container {
+    padding: 5rem 1.5rem;
+  }
+
+  .skill-panel {
+    padding: 1.5rem;
+  }
+
+  .experience-list::before {
+    left: 0;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+    padding-left: 1.5rem;
+  }
+
+  .experience-item::before {
+    left: -6px;
+  }
+
+  .experience-date {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .logo {
+    display: none;
+  }
+
+  .tech-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tech {
+    column-gap: 0.6rem;
+    padding: 0.6rem;
+  }
+
+  .tech i {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .tech-name {
+    font-size: 0.8rem;
+  }
+}
