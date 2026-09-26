@@ -228,3 +228,76 @@ button {
 .nav-links a.active {
   color: var(--pink);
 }
+
+/*hero*/
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  padding: 8rem 5rem 5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 0.95;
+}
+
+.hero-nome {
+  display: block;
+  color: var(--orange);
+}
+
+.hero-sobrenome {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--pink);
+}
+
+.hero-description {
+  max-width: 460px;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.hero-photo {
+  position: relative;
+  justify-self: center;
+  width: 280px;
+  aspect-ratio: 7 / 9;
+  padding: 3px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, var(--orange), var(--pink), var(--lavender));
+}
+
+.hero-photo::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: -16px;
+  bottom: -16px;
+  z-index: -1;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
