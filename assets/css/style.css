@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inconsolata:wght@300;400;500&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css");
+
+/*variáveis*/
+:root {
+  --bg: #0d0a0f;
+  --bg-alt: #130f17;
+  --orange: #ffd6a0;
+  --pink: #f4a7bb;
+  --lavender: #c4a8db;
+  --green: #a8c5b5;
+  --cream: #f0e6d3;
+  --text: #e8dff2;
+  --muted: #8a7a9a;
+  --border: rgba(196, 168, 219, 0.12);
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inconsolata", monospace;
+  --radius: 14px;
+  --header-height: 4.5rem;
+}
+
+/*base*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+[hidden] {
+  display: none !important;
+}
