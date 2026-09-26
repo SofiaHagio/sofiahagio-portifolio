@@ -17,4 +17,21 @@ function initActiveNav() {
   document.querySelectorAll("main section[id]").forEach((section) => observer.observe(section));
 }
 
+//troca as categorias de habilidades
+function initTabs() {
+  const tabs = document.querySelectorAll(".skill-tab");
+  const panels = document.querySelectorAll(".skill-panel");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      panels.forEach((panel) => (panel.hidden = true));
+
+      tab.classList.add("active");
+      document.getElementById(tab.dataset.panel).hidden = false;
+    });
+  });
+}
+
 initActiveNav();
+initTabs();
