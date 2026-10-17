@@ -744,7 +744,7 @@ button {
 
   .skill-nav {
     flex-direction: row;
-    overflow-x: auto;
+    flex-wrap: wrap;
   }
 
   .skill-tab {
@@ -811,8 +811,39 @@ button {
     display: none;
   }
 
+  .skill {
+    gap: 1rem;
+  }
+
+  .skill-nav {
+    gap: 0.4rem;
+  }
+
+  .skill-tab {
+    padding: 0.55rem 0.9rem;
+    border-radius: 999px;
+  }
+
+  .tab-name {
+    font-size: 0.85rem;
+  }
+
+  .skill-panel {
+    padding: 1.25rem;
+  }
+
+  .skill-title {
+    font-size: 1.4rem;
+  }
+
+  .skill-desc {
+    margin-bottom: 1.25rem;
+    font-size: 0.8rem;
+  }
+
   .tech-list {
     grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
   }
 
   .tech {
@@ -828,5 +859,11 @@ button {
 
   .tech-name {
     font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .tech-desc {
+    font-size: 0.68rem;
+    line-height: 1.3;
   }
 }
