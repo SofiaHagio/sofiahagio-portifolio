@@ -10,6 +10,7 @@
   --pink: #f4a7bb;
   --lavender: #c4a8db;
   --green: #a8c5b5;
+  --blue: #a8c8e8;
   --cream: #f0e6d3;
   --text: #e8dff2;
   --muted: #8a7a9a;
@@ -117,6 +118,12 @@ button {
   --accent: var(--green);
   --accent-soft: rgba(168, 197, 181, 0.25);
   --accent-bg: rgba(168, 197, 181, 0.08);
+}
+
+.accent-blue {
+  --accent: var(--blue);
+  --accent-soft: rgba(168, 200, 232, 0.25);
+  --accent-bg: rgba(168, 200, 232, 0.08);
 }
 
 .tags {
@@ -371,7 +378,6 @@ button {
 
 .skill-panel {
   position: relative;
-  min-height: 100%;
   padding: 2.25rem;
   background: var(--bg);
   border: 1px solid var(--border);
